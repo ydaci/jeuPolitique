@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Run for présidence !</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="gameContainer">
+  <canvas id="gameCanvas" width="800" height="450"></canvas>
+
+  <div id="ui">
+    <div class="ui-block">
+      <span class="ui-label">SIGNATURES</span>
+      <span class="ui-value" id="sigCount">0 / 500</span>
+      <div id="signBar"><div id="signFill"></div></div>
+    </div>
+
+    <div class="ui-block" style="align-items:center">
+      <span class="ui-label">NIVEAU</span>
+      <span class="ui-value" id="levelDisplay">1</span>
+    </div>
+
+    <div class="ui-block" style="align-items:flex-end">
+      <span class="ui-label">VIE</span>
+      <span class="ui-value" id="lifeDisplay">❤️❤️❤️</span>
+    </div>
+  </div>
+
+  <div id="overlay">
+    <h1>🗳️ COURSE AUX<br>500 SIGNATURES 🗳️</h1>
+    <p>
+      ⬆️ / Z / ESPACE — Sauter<br>
+      ◀️ ▶️ — Se déplacer
+    </p>
+    <button id="startBtn">DÉMARRER !</button>
+  </div>
+
+  <div id="controls">← → Déplacer | ↑ Z Espace Sauter</div>
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>
